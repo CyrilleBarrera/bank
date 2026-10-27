@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Déboguer : import des CSV",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "comptes_bancaires",
+      "args": [
+        "donnees/exports/*.csv",
+        "--afficher"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Déboguer : graphiques",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "comptes_bancaires.graphiques",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Déboguer : fichier courant",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

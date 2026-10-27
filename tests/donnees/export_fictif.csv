@@ -1,0 +1,10 @@
+"Date Opération";"Date Valeur";Libellé;"Libellé Suggéré";Catégorie;"Catégorie Parente";Solde;Commentaire;"Numéro Compte";"Libellé Compte";Solde;Pointage
+2026-03-31;2026-03-31;"CARTE 30/03/26 INTERMARCHE CB*1234";Intermarché;Alimentation;"Vie quotidienne";"-20,00";;00011112222;BoursoBank;1830.0;Non
+2026-03-20;2026-03-20;"CARTE 18/03/26 BRASSERIE DU PORT CB*1234";"Brasserie Du Port";"Restaurants, bars, discothèques…";"Loisirs et sorties";"-45,00";;00011112222;BoursoBank;1850.0;Non
+2026-03-20;2026-03-20;"CARTE 17/03/26 INTERMARCHE CB*1234";Intermarché;Alimentation;"Vie quotidienne";"-30,00";;00011112222;BoursoBank;1850.0;Non
+2026-03-12;2026-03-12;"PRLV SEPA SFR";SFR;"Téléphonie (fixe et mobile)";"Abonnements & téléphonie";"-15,00";test commentaire;00011112222;BoursoBank;1925.0;Non
+2026-03-10;2026-03-10;"VIR SEPA C.P.A.M. DE L ISERE";"Vir Sepa Cpam";"Remboursements frais de santé";Santé;"10,00";;00011112222;BoursoBank;1940.0;Non
+2026-03-05;2026-03-05;"CARTE 04/03/26 PHARM. CENTRALE CB*1234";"Pharm. Centrale";"Pharmacie et laboratoire";Santé;"-25,00";;00011112222;BoursoBank;1930.0;Non
+2026-03-02;2026-03-02;"VIR INST MAINSANT MARION";"Vir Inst Mainsant Marion";"Virements émis";"Virements émis";"-1 000,00";;00011112222;BoursoBank;1955.0;Non
+2026-03-01;2026-03-01;"VIR SEPA STEERLIGHT";"Vir Sepa Steerlight";"Virements reçus";"Virements reçus";"2 500,00";;00011112222;BoursoBank;2955.0;Non
+2026-02-28;2026-02-28;"CARTE 27/02/26 ZZZ INCONNU CB*1234";"Zzz Inconnu";"Non catégorisé";"Non catégorisé";"-45,00";;00011112222;BoursoBank;455.0;Non

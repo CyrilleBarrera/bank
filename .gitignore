@@ -1,0 +1,21 @@
+# Données personnelles : ne jamais les versionner
+donnees/*
+!donnees/.gitkeep
+*.csv
+!tests/donnees/*.csv
+*.xlsx
+*.html
+*.json.bak
+
+# Python
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Installateur
+.installation.json
+*.avant-v2.json

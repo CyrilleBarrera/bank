@@ -1,0 +1,192 @@
+{
+ "libelles": [
+  {
+   "regex": "VIR INST MAINSANT MARION",
+   "libelle": "Virement vers Marion",
+   "type": "Marion"
+  },
+  {
+   "regex": "VIR INST CYRILLE BARRERA",
+   "libelle": "Virement Cyrille",
+   "type": "Cyrille"
+  },
+  {
+   "regex": "VIR SEPA STEERLIGHT",
+   "libelle": "Salaire Steerlight",
+   "type": "Cyrille"
+  },
+  {
+   "regex": "LUIS BARRERA",
+   "libelle": "Virement Luis Barrera",
+   "type": null
+  },
+  {
+   "regex": "C\\.?P\\.?A\\.?M",
+   "libelle": "Remboursement CPAM",
+   "type": "Santé"
+  },
+  {
+   "regex": "MHP PRESTATIONS SANTE|PLEIADE",
+   "libelle": "Remboursement mutuelle",
+   "type": "Santé"
+  },
+  {
+   "regex": "PRLV SEPA SFR",
+   "libelle": "Forfait SFR",
+   "type": "Charges Fixes"
+  },
+  {
+   "regex": "RETRAIT DAB",
+   "libelle": "Retrait espèces",
+   "type": "Vie courante"
+  },
+  {
+   "regex": "INTERMARCHE|INTERM\\b",
+   "libelle": "Intermarché",
+   "type": "Nourriture"
+  },
+  {
+   "regex": "COMPASS-6505|SELF H2 CEA",
+   "libelle": "Cantine",
+   "type": "Nourriture"
+  },
+  {
+   "regex": "EPICURIA",
+   "libelle": "Epicuria",
+   "type": "Nourriture"
+  },
+  {
+   "regex": "BOULANGERIE|FOURNIL",
+   "libelle": "Boulangerie",
+   "type": "Nourriture"
+  },
+  {
+   "regex": "PHARM",
+   "libelle": "Pharmacie",
+   "type": "Santé"
+  },
+  {
+   "regex": "CITIZ",
+   "libelle": "Citiz (autopartage)",
+   "type": "Transport"
+  },
+  {
+   "regex": "SNCF",
+   "libelle": "SNCF",
+   "type": "Transport"
+  },
+  {
+   "regex": "FLIX",
+   "libelle": "FlixBus",
+   "type": "Transport"
+  },
+  {
+   "regex": "BLABLACAR",
+   "libelle": "BlaBlaCar",
+   "type": "Transport"
+  },
+  {
+   "regex": "SEMITAG",
+   "libelle": "TAG (tram / bus)",
+   "type": "Transport"
+  },
+  {
+   "regex": "AU VIEUX CAMPEUR",
+   "libelle": "Au Vieux Campeur",
+   "type": "Loisirs"
+  },
+  {
+   "regex": "DECATHLON",
+   "libelle": "Decathlon",
+   "type": "Loisirs"
+  },
+  {
+   "regex": "ESPACE VERTICAL",
+   "libelle": "Espace Vertical (escalade)",
+   "type": "Loisirs"
+  },
+  {
+   "regex": "HELLO ?ASSO",
+   "libelle": "HelloAsso",
+   "type": null
+  }
+ ],
+ "types": [
+  "Appartement",
+  "Nourriture",
+  "Santé",
+  "Transport",
+  "Cyrille",
+  "Marion",
+  "Banque",
+  "Cadeaux",
+  "Charges Fixes",
+  "Choeur",
+  "Mariage",
+  "Loisirs",
+  "Voyage",
+  "Vie courante",
+  "À classer"
+ ],
+ "categories_banque": {
+  "_aide": "Utilisé seulement si aucune règle 'libelles' ne donne de type. Clé = 'Catégorie' (puis 'Catégorie Parente') de la banque.",
+  "Alimentation": "Nourriture",
+  "Restaurants, bars, discothèques…": "Loisirs",
+  "Vêtements et accessoires": "Vie courante",
+  "Equipements sportifs et artistiques": "Loisirs",
+  "Club / association (sport, hobby, art…)": "Loisirs",
+  "Mobilier, électroménager, décoration…": "Appartement",
+  "Retraits cash": "Vie courante",
+  "Téléphonie (fixe et mobile)": "Charges Fixes",
+  "Transports quotidiens (métro, bus…)": "Transport",
+  "Transports longue distance (avions, trains…)": "Transport",
+  "Péages": "Transport",
+  "Carburant": "Transport",
+  "Hébergement (hôtels, camping…)": "Voyage",
+  "Pharmacie et laboratoire": "Santé",
+  "Remboursements frais de santé": "Santé",
+  "Solidarité - Autres": "Cadeaux",
+  "Livres, CD/DVD, bijoux, jouets…": "Loisirs",
+  "Vie quotidienne": "Vie courante",
+  "Loisirs et sorties": "Loisirs",
+  "Voyages & Transports": "Transport",
+  "Auto & Moto": "Transport",
+  "Santé": "Santé",
+  "Abonnements & téléphonie": "Charges Fixes",
+  "Cadeaux et solidarité": "Cadeaux"
+ },
+ "contextes_exemples": [
+  {
+   "_aide": "EXEMPLE à adapter. debut/fin au format AAAA-MM-JJ (inclus). 'regles' : comme 'libelles', mais prioritaires pendant le contexte. 'remplacer_types' : {ancien: nouveau}, '*' = tous les types. 'comptes' : null = tous, ou [\"Cyrille\", \"Joint\"]. Les contextes ne doivent pas se chevaucher (le premier de la liste gagne).",
+   "nom": "Vacances Saint-Raphaël",
+   "categorie": "Vacances",
+   "debut": "2026-07-10",
+   "fin": "2026-07-16",
+   "comptes": null,
+   "regles": [
+    {
+     "regex": "SAINT RAPHAEL",
+     "libelle": "Sortie Saint-Raphaël",
+     "type": "Voyage"
+    }
+   ],
+   "remplacer_types": {
+    "Loisirs": "Voyage"
+   },
+   "actif": true
+  },
+  {
+   "_aide": "EXEMPLE désactivé (actif: false) : pendant un mariage, toutes les dépenses passent en type Mariage.",
+   "nom": "Mariage",
+   "categorie": "Événement",
+   "debut": "2026-10-17",
+   "fin": "2026-10-18",
+   "comptes": null,
+   "regles": [],
+   "remplacer_types": {
+    "*": "Mariage"
+   },
+   "actif": false
+  }
+ ]
+}
